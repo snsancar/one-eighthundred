@@ -1,5 +1,8 @@
 package com.aconex.oneeighthundred.constants;
 
+/**
+ * Constants used across the Application.
+ */
 public class AppConstants {
 
 	public static final String DEFAULT_DICTIONARY_PATH = "dictionary.challenge.txt";

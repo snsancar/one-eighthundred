@@ -5,6 +5,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Utility Class used to read the inputs [ Phone numbers and Dictionary Files]
+ */
 public class InputReader {
 
 	public static Set<String> getDictionary(String filePath) {
@@ -16,9 +19,7 @@ public class InputReader {
 
 	public static Stream<String> getInputPhoneNumbers(String filePath) {
 		Stream<String> fileContent = FileInputReader.getFileContent(filePath);
-		return fileContent
-				.map(InputSanitiser::sanitiseGeneric)
-				.filter(Optional::isPresent)
-				.map(Optional::get);
+		return fileContent.map(InputSanitiser::sanitiseGeneric)
+				.filter(Optional::isPresent).map(Optional::get);
 	}
 }

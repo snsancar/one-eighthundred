@@ -6,9 +6,13 @@ import java.nio.file.Paths;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
 
+/**
+ * Utility Class used to read the Files and return as Stream.
+ */
 public class FileInputReader {
 
-	private final static Logger LOGGER = Logger.getLogger(FileInputReader.class.getName());
+	private final static Logger LOGGER = Logger.getLogger(FileInputReader.class
+			.getName());
 
 	public static Stream<String> getFileContent(String filePath) {
 		try {
