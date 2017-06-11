@@ -12,7 +12,7 @@ public class InputSanitiser {
     private static final String WHITESPACE = "\\s";
     private static final String DIGIT = "\\d+";
 
-    Optional<String>  sanitiseGeneric(String original) {
+    public static Optional<String>  sanitiseGeneric(String original) {
         String sanitised = original.replaceAll(PUNCTUATION, "").replaceAll(WHITESPACE, "");
         if (!sanitised.matches(DIGIT)) {
             LOGGER.warning("Could not sanitise input: " + original + "; best shot: " + sanitised);

@@ -10,7 +10,7 @@ public class FileInputReader {
 
 	private final static Logger LOGGER = Logger.getLogger(FileInputReader.class.getName());
 
-	public Stream<String> getFileContent(String filePath) {
+	public static Stream<String> getFileContent(String filePath) {
 		try {
 			return Files.lines(Paths.get(filePath));
 		} catch (IOException e) {
