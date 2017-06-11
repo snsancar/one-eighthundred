@@ -1,9 +1,7 @@
 package com.aconex.oneeighthundred.processor;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 

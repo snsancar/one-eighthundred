@@ -1,13 +1,13 @@
 package com.aconex.oneeighthundred.processor;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Test;
 
 public class ProcessorTest {
 
@@ -15,8 +15,8 @@ public class ProcessorTest {
 
 	@Before
 	public void setUp() throws Exception {
-		this.processor = new PhoneNumberProcessor(new HashSet<>(Arrays.asList("CALL",
-				"HELLO", "ME", "WORLD")));
+		this.processor = new PhoneNumberProcessor(new HashSet<>(Arrays.asList(
+				"CALL", "HELLO", "ME", "WORLD")));
 	}
 
 	@Test

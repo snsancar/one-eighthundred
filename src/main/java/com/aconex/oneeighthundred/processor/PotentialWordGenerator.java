@@ -1,5 +1,7 @@
 package com.aconex.oneeighthundred.processor;
 
+import static com.aconex.oneeighthundred.constants.AppConstants.REPLACEABLE_NUMBERS;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
@@ -12,8 +14,6 @@ import java.util.stream.Stream;
 class PotentialWordGenerator {
 	private final static Logger LOGGER = Logger
 			.getLogger(PotentialWordGenerator.class.getName());
-
-	private static final String REPLACEABLE_NUMBERS = "[2-9]+";
 	private static final Map<Character, Set<Character>> KEYPAD = new HashMap<>();
 
 	static {

@@ -1,5 +1,9 @@
 package com.aconex.oneeighthundred.input;
 
+import static com.aconex.oneeighthundred.constants.AppConstants.DIGIT;
+import static com.aconex.oneeighthundred.constants.AppConstants.PUNCTUATION;
+import static com.aconex.oneeighthundred.constants.AppConstants.WHITESPACE;
+
 import java.util.Optional;
 import java.util.logging.Logger;
 
@@ -7,10 +11,6 @@ import java.util.logging.Logger;
 public class InputSanitiser {
 
 	private final static Logger LOGGER = Logger.getLogger(InputSanitiser.class.getName());
-
-    private static final String PUNCTUATION = "\\p{Punct}";
-    private static final String WHITESPACE = "\\s";
-    private static final String DIGIT = "\\d+";
 
     public static Optional<String>  sanitiseGeneric(String original) {
         String sanitised = original.replaceAll(PUNCTUATION, "").replaceAll(WHITESPACE, "");
