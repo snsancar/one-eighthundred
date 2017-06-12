@@ -14,16 +14,19 @@ Java 8
 
 How to compile code:
 
-```mvn clean install
+```sh
+mvn clean install
 ```
 
 
 ###How to run the Application.
 
-```
+```sh
 java -jar <jarname> -d <dictionary path> <phonenumbers file path>
-
+```
 
 ###Sample Input used for Testing.
 
+```sh
 2255.63
+```
